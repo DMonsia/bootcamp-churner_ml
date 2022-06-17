@@ -1,33 +1,34 @@
 seed: 42
 data:
-  datapath: '/Users/bguedou/churner-ml/data/WA_Fn-UseC_-Telco-Customer-Churn.csv'
-  label: 'Churn'
-  numerical: 
-      - 'tenure'
-      - 'MonthlyCharges' 
-      - 'TotalCharges' 
-  categorical: 
-    - 'gender'
-    - 'SeniorCitizen'
-    - 'Partner'
-    - 'Dependents' 
-    - 'PhoneService' 
-    - 'MultipleLines' 
-    - 'InternetService' 
-    - 'OnlineSecurity' 
-    - 'OnlineBackup' 
-    - 'DeviceProtection' 
-    - 'TechSupport' 
-    - 'StreamingTV' 
-    - 'StreamingMovies' 
-    - 'Contract' 
-    - 'PaperlessBilling' 
-    - 'PaymentMethod'
+  datapath: "../../data/WA_Fn-UseC_-Telco-Customer-Churn.csv"
+  label: "Churn"
+  numerical:
+    - "tenure"
+    - "MonthlyCharges"
+    - "TotalCharges"
+  categorical:
+    - "gender"
+    - "SeniorCitizen"
+    - "Partner"
+    - "Dependents"
+    - "PhoneService"
+    - "MultipleLines"
+    - "InternetService"
+    - "OnlineSecurity"
+    - "OnlineBackup"
+    - "DeviceProtection"
+    - "TechSupport"
+    - "StreamingTV"
+    - "StreamingMovies"
+    - "Contract"
+    - "PaperlessBilling"
+    - "PaymentMethod"
 model:
-    savepath: '/Users/bguedou/atut/churner/saved'
-    k: 5
-    name: 'churner_model.pkl'
-    test-set-percentage: 0.3
-    calibration-set-percentage: 0.5
+  savepath: "./saved"
+  k: 5
+  name: "churner_model.pkl"
+  test_set_percentage: 0.3
+  calibration_set_percentage: 0.5
+  n_trials: 10
 inference:
-    alert_threshold: 0.7
+  alert_threshold: 0.7
