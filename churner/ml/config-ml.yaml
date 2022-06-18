@@ -1,6 +1,6 @@
 seed: 42
 data:
-  datapath: "../../data/WA_Fn-UseC_-Telco-Customer-Churn.csv"
+  datapath: "bootcamp-churner_ml/churner/ml/data/WA_Fn-UseC_-Telco-Customer-Churn.csv"
   label: "Churn"
   numerical:
     - "tenure"
@@ -24,7 +24,7 @@ data:
     - "PaperlessBilling"
     - "PaymentMethod"
 model:
-  savepath: "./saved"
+  savepath: "bootcamp-churner_ml/churner/app/assets/saved"
   k: 5
   name: "churner_model.pkl"
   test_set_percentage: 0.3
