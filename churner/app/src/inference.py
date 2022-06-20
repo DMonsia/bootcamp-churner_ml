@@ -5,7 +5,7 @@ import sys
 import os
 import pickle
 import pandas as pd
-from assets.utils import preprocessor
+from src.utils import preprocessor
 
 
 class Predictor:

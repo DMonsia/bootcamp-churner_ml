@@ -23,7 +23,7 @@ data:
     - "PaperlessBilling"
     - "PaymentMethod"
 model:
-  savepath: "assets/saved"
+  savepath: "models/"
   name: "churner_model.pkl"
 inference:
   alert_threshold: 0.7

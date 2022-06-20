@@ -1,6 +1,6 @@
 import yaml
 from flask import Flask, request
-from inference import Predictor
+from src.inference import Predictor
 
 # Paramètres
 config_path = "config-api.yaml"
